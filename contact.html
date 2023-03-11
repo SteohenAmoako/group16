@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+</head>
+<style>
+
+  /* Define the animation */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.appear-letter-by-letter {
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+/* Delay the start of each letter */
+.appear-letter-by-letter span {
+  display: inline-block;
+  animation: appear 1s forwards;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+    /* CSS styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: navy;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      form {
+        margin: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        margin-bottom: 10px;
+      }
+    }
+    
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    
+    textarea {
+      height: 200px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4285F4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #357AE8;
+    }
+    
+</style>
+
+<body bgcolor="red">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="dd">
+
+        <div class="profile">
+          <img src="profile.jpg" alt="" class="img-fluid rounded-circle">
+         <h1 class="text-light" style="color:white">Dr Alimatu Yussif</a></h1>
+        </div>
+
+       <div id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="about.html" class="nav-link scrollto  "><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="contact.html" class="nav-link scrollto "><i class="bx bx-file-blank"></i> <span>Contact</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          
+        </ul>
+       </div><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+    
+  <section style="background-color: #f9f9f9; padding: 20px;background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;">
+    <h2 style="color: #333;">Contact Information</h2>
+    <ul style="list-style: none; margin: 0; padding: 0;">
+      <li style="margin-bottom: 10px;">
+        <i class="fa fa-envelope" aria-hidden="true" style="color: #333;"></i>
+        <a href="mailto:john.doe@example.com" style="color: #333; margin-left: 10px;">asyussiff@ucc.edu.gh</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <i class="fa fa-phone" aria-hidden="true" style="color: #333;"></i>
+        <span style="color: #333; margin-left: 10px;">233-5959-19802</span>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <i class="fa fa-building" aria-hidden="true" style="color: #333;"></i>
+        <span style="color: #333; margin-left: 10px;">Science Building, Room 101</span>
+      </li>
+      <li>
+        <i class="fa fa-clock-o" aria-hidden="true" style="color: #333;"></i>
+        <span style="color: #333; margin-left: 10px;">Office Hours: Monday-Friday, 10am-3pm</span>
+      </li>
+    </ul>
+  </section>
+  <section style="background-color: #f7f7f7; padding: 20px;background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;">
+    <h2>Course Information</h2>
+    <ul>
+      <li>Course 1: <a href="#">Syllabus</a> | <a href="#">Assignments</a></li>
+      <li>Course 2: <a href="#">Syllabus</a> | <a href="#">Assignments</a></li>
+    </ul>
+  </section>
+  <section style="background-color: #f2f2f2; padding: 20px; border-radius: 10px;background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;">
+    <h2 style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 20px;">Research Interests</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="margin-bottom: 10px; font-size: 20px;"><i class="fas fa-check-circle" style="color: #2ecc71; margin-right: 10px;"></i>Artificial Intelligence</li>
+      <li style="margin-bottom: 10px; font-size: 20px;"><i class="fas fa-check-circle" style="color: #2ecc71; margin-right: 10px;"></i>Internet of things (IoTs)</li>
+      <li style="margin-bottom: 10px; font-size: 20px;"><i class="fas fa-check-circle" style="color: #2ecc71; margin-right: 10px;"></i>Semantic Web Applications</li>
+    </ul>
+  </section>
+  <section style="background-color: #f8f8f8; padding: 20px; border-radius: 10px;background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;">
+    <h2 style="color: #333;">Biography</h2>
+    <p style="font-size: 18px; line-height: 1.5;"> Dr Alimatu-Saadia Yussiff currently lecture at the Department of Computer Science & Information Technology, University of Cape Coast, Ghana. Her research areas include, E-learning, E-collaboration, Information Systems (Business Informatics), Data Mining, Data modeling, Community of Inquiry Model (COI) and Internet of things. Her current project is on 'Transcript analysis of educational collaborative learning.'</p>
+  </section>
+  
+
+  <section style="background-color: #f2f2f2;font-family: Arial, sans-serif; background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;">
+
+    <h2>Office Hours and Appointment Scheduling</h2>
+    <p>To schedule an appointment, please use the <a href="#">online appointment scheduling system</a>. You can also drop by during office hours.</p>
+  </section>
+
+  <section style="background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;">
+    <p>Do you want to contact Dr Alimatu?</p>
+  <label>
+    <input type="radio" name="contact" value="yes" checked>
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="contact" value="no">
+    No
+  </label>
+    <form action="#" method="post">
+      
+      <label for="name">Your name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    
+      <input type="submit" value="Send">
+    </form>
+    
+  </section>
+
+  <footer>
+    <p>&copy; SteveTeck 2023. All rights reserved.</p>
+  </footer>
+
+
+
+</body>
+
+</html>

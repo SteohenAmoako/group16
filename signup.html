@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+</head>
+<style>
+
+  /* Define the animation */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.appear-letter-by-letter {
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+/* Delay the start of each letter */
+.appear-letter-by-letter span {
+  display: inline-block;
+  animation: appear 1s forwards;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+    /* CSS styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      form {
+        margin: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        margin-bottom: 10px;
+      }
+    }
+
+</style>
+
+<body bgcolor="red">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="dd">
+
+        <div class="profile">
+          <img src="profile.jpg" alt="" class="img-fluid rounded-circle">
+         <h1 class="text-light" style="color:white">Dr Alimatu Yussif</a></h1>
+        </div>
+
+       <div id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="home.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="about.html" class="nav-link scrollto  "><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="resume.html" class="nav-link scrollto "><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          
+        </ul>
+       </div><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main"> 
+     
+    <div class="container">
+        <section  >
+          
+        </section>
+    </div>
+  </main><!-- End #main -->
+
+
+</body>
+
+</html>s
