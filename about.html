@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+</head>
+<style>
+  body{
+    background-color: navy;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.container {
+    box-shadow: 0 0 2px rgb(0 0 0 / 18%), 0 1px 3px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    background: var(--nova-color-white);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-family: var(--nova-font-family-sans-serif);
+    max-width: 100%;
+    width: auto;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stats-item {
+    text-align: center;
+}
+
+.stats-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stats-label {
+    font-size: 16px;
+    color: #999;
+}
+
+/* Define the animation */
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 10px;
+    }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+</style>
+<body >
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="dd">
+
+        <div class="profile">
+          <img src="profile.jpg" alt="" class="img-fluid rounded-circle">
+         <h1 class="text-light" style="color:white">Dr Alimatu Yussif</a></h1>
+        </div>
+
+       <div id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="about.html" class="nav-link scrollto  "><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="contact.html" class="nav-link scrollto "><i class="bx bx-file-blank"></i> <span>Contact</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          
+        </ul>
+       </div><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main"> 
+    <div class="container">
+      <section id="contact" class="contact" margin="30px">
+        <div class="stats-container">
+          <div class="stats-item">
+            <div class="stats-number">12</div>
+            <div class="stats-label">Publications</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-number">1,211</div>
+            <div class="stats-label">Reads</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-number">22</div>
+            <div class="stats-label">Citations</div>
+          </div>
+        </div>
+          <div class="container" >
+            
+<h1 style="color:black;text-align: center;">ABOUT DR. (MRS.) ALIMATU-SAADIA YUSSIF </h1>
+<p >Dr. (Mrs.) Alimatu - Saadia Yussiff is a Senior Lecturer in the Department of Computer Science and Information Technology, University of Cape Coast. She has taught relevant courses in the department, and assumed responsibilities of regular university lecturer including examination officer, registration officer and academic advisor. She is a dedicated, professional and accomplished lecturer with knowledge of teaching computer science and Information Technology courses.</p>
+<b style="font-size: 25px;"> Research</b>
+<table class="No_Boarder">
+  <thead>
+    <tr>
+      <th>Research Activities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E-learning Related Topics</td>
+    </tr>
+    <tr>
+      <td>Intelligent tutoring systems</td>
+    </tr>
+    <tr>
+      <td>Mobile and Ubiquitous Systems</td>
+    </tr>
+    <tr>
+      <td>Transcript analysis of users collaborative learning experience</td>
+    </tr>
+    <tr>
+      <td>Internet of things (IoTs)</td>
+    </tr>
+    <tr>
+      <td>Science Technology, Engineering, and Mathematics (STEM) Education and System Development</td>
+    </tr>
+    <tr>
+      <td>Semantic Web Applications</td>
+    </tr>
+  </tbody>
+</table>
+<b style="font-size: 25px;"> Bodies</b>
+<table>
+  <thead>
+    <tr>
+      <th>Professional Body</th>
+      <th>Membership Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>University Teachers Association of Ghana (UTAG)</td>
+      <td>2007 – Date</td>
+    </tr>
+    <tr>
+      <td>Ghana Science Association (GSA)</td>
+      <td>2009 – Date</td>
+    </tr>
+    <tr>
+      <td>Information Technologist Association of Ghana (ITAG)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Internet Society Ghana (ISOC)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>African Network Operators Group (AFNOG)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Women in Information Technology (WoTI)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>African Women in Computing (Afchix)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Women TechMakers</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Women in Science Technology, Engineering, and Mathematics (STEM), UCC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>          
+          </div>
+        <section class="EduEdu">
+          <div  class="EduEdu" style="display: flex;">
+            <b style="font-size: 25px;"> Education</b>
+            <img src="UTP.gif" alt="UTP Logo" style="width: 100px; border: 1px solid black;">
+            <div>
+              
+              <p>August 2013 - August 2016</p>
+              <p>Universiti Teknologi PETRONAS
+                Field of study
+                computer systems and networks, database systems, human computer interaction, Web application development, programming languages, software engineering, database concepts and administration, managing technical professional, computer ethics.</p>
+            </div>
+          </div>
+        </section>
+          
+      </section>
+  </div>
+
+   
+  </main><!-- End #main -->
+
+
+</body>
+
+</html>
